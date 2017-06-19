@@ -2,25 +2,25 @@ package main;
 
 import java.util.Scanner;
 
-public class solution {
+public class AB {
 
 	public static int[] getSub(int n, int k) {
-        int m = 0;
-        int x = -1;
-        //int[] a = new int[2];
-        for(int i = 0; i < n; i ++){
-            if(k > i * (n - i)){
-                m += 1;
-            }else{
-                x = k - (m - 1) * (n - m - 1);
-                int[] a = {m, x};
-                return a;
-            }
-        }
-        int[] a = {m, x};
-        return a;
-    }
-	
+		int m = 0;
+		int x = -1;
+		//int[] a = new int[2];
+		for(int i = 0; i < n; i ++){
+			if(k > i * (n - i)){
+				m += 1;
+			}else{
+				x = k - (m - 1) * (n - m - 1);
+				int[] a = {m, x};
+				return a;
+			}
+		}
+		int[] a = {m, x};
+		return a;
+	}
+
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Scanner in = new Scanner(System.in);
